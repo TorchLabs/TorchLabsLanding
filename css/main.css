@@ -1,11 +1,66 @@
 body {
     background-color: #000;
     margin: 0;
+    padding-top: 40px;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    width: 100vw;
+}
+
+.header {
+    max-width: 960px;
+    height: 400px;
+    margin: 0 auto;
+    color: #ccc;
+    padding-top: 1px;
+}
+
+.header h1,
+.company-phrase {
+    background: -webkit-linear-gradient(#ff0303, #d4ce17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: contain;
+}
+
+.company-phrase {
+    width: calc(100% - 240px);
+    height: 200px;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.company-logo {
+    background-image: url('../img/company_logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 240px;
+    height: 240px;
+    margin-left: auto;
+    -webkit-animation: filter-animation 5s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
+  
+  50% {
+    -webkit-filter: sepia(1) saturate(8);
+  }
+  
+  100% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
 }
 
 nav {
@@ -39,3 +94,142 @@ nav {
 }
 
 .nav--links--wrapper a:hover { color: white; }
+
+:target:before {
+    content:"";
+    display:block;
+    height:40px; /* fixed header height*/
+    margin:-40px 0 0; /* negative fixed header height */
+}
+
+.section  {
+    width: 100vw;
+    margin: 150px 0px;
+    display: flex;
+}
+
+footer {
+    width: 100vw;
+    margin: 50px 0px;
+    display: flex;
+}
+
+footer > div {
+    position: relative;
+    padding: 30px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+    color: #ccc;
+}
+
+footer a,
+.section a {
+    color: #ff8300;
+    text-decoration: none
+}
+
+footer a:visited,
+.section a:visited {
+    color: green;
+}
+
+.section > div {
+    position: relative;
+    padding: 0 30px 30px;
+    margin: 0 auto;
+    min-height: 250px;
+    width: 80%;
+    max-width: 960px;
+    color: #ccc;
+}
+
+.section > div:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    border-top: 2px solid #ff8300;
+    border-left: 2px solid #ff8300;
+}
+
+/*.section > div:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-top: 2px solid #ff8300;
+    border-right: 2px solid #ff8300;
+}
+
+.down-corners:before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    border-bottom: 2px solid #ff8300;
+    border-left: 2px solid #ff8300;
+}*/
+
+.down-corners:after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 2px solid #ff8300;
+    border-right: 2px solid #ff8300;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-wrapper.reverse-content {
+    flex-direction: row-reverse;
+}
+
+.section-text {
+    max-width: 70%;
+}
+
+.section-image {
+    background-size: cover;
+    max-width: 30%;
+    width: 240px;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.presentation .section-image {
+    background-image: url('../img/working.jpg');
+}
+
+.what-we-do .section-image {
+    background-image: url('../img/innovation.jpeg');
+}
+
+.tools .section-image {
+    background-image: url('../img/tools.jpeg');
+}
+
+.wizards .section-image {
+    background-image: url('../img/wizard.jpeg');
+}
+
+.contact-us .section-image {
+    background-image: url('../img/contact.jpeg');
+}

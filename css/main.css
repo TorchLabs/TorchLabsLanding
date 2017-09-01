@@ -21,9 +21,15 @@ header {
     padding-top: 1px;
 }
 
+.header h1 {
+    margin-left: 50px;
+    display: inline-block;
+    width: 200px;
+}
+
 .header h1,
-.company-phrase {
-    background: -webkit-linear-gradient(#ff0303, #d4ce17);
+.company-phrase > span {
+    background: -webkit-linear-gradient(left, #ca3333, #d46617, #ca3333);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: contain;
@@ -34,12 +40,12 @@ header {
     height: 200px;
     float: left;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     font-size: 30px;
 }
 .company-logo {
-    background-image: url('../img/company_logo.png');
+    background-image: url('../img/company_logo.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

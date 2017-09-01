@@ -201,7 +201,6 @@ footer a:visited,
 .section-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .section-wrapper.reverse-content {

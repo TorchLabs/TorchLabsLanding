@@ -104,6 +104,26 @@
                     <div class="section-text"></div>
                     <div class="section-image"></div>
                 </div>
+                <div class="section-wrapper">
+                    <form action="https://script.google.com/macros/s/AKfycbz7fZ9WBczfX7V3L2enClTmdSCpvnhmhOXWSu2ey_1aY3EfqoQ/exec"
+                    id="gform"
+                    method="POST"
+                    enctype="multipart/form-data">
+                        <p>What's your name?</p>
+                        <input type="text" name="name" class="form-input">
+                        <p>Where should we reply to?</p>
+                        <input type="text" name="email" class="form-input">
+                        <p>Tell us whatever you want</p>
+                        <textarea name="message" class="form-input"></textarea>
+                        <br/>
+                        <input type="submit" value="Send!" class="submit-btn" />
+                    </form>
+                    <!-- Customise the Thankyou Message People See when they submit the form: -->
+                    <div style="display:none;" id="thankyou_message">
+                        <h2><em>Thanks</em> for contacting us!
+                          We will get back to you soon!</h2>
+                    </div>
+                </div>
                 <span class="down-corners"></span>
             </div>
         </section>
@@ -113,5 +133,8 @@
             </div>
         </footer>
         <script src="js/main.js"></script>
+        <!-- Submit the Form to Google Using "AJAX" -->
+        <script data-cfasync="false" type="text/javascript"
+        src="js/form-submission-handler.js"></script>
     </body>
 </html>

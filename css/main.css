@@ -325,3 +325,34 @@ footer a:visited,
 .gabe {
     background-image: url('../img/gabe.jpg');
 }
+
+.submit-btn {
+    margin-top: 20px;
+    background-color: orange;
+    outline: none;
+    width: 80px;
+    height: 30px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border: none;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-input {
+    width: 250px;
+    height: 30px;
+    padding: 0 10px;
+    background-color: #504b4b;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    outline: none;
+}
+
+textarea.form-input {
+    height: 150px;
+    padding: 10px;
+}

@@ -201,6 +201,7 @@ footer a:visited,
 .section-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .section-wrapper.reverse-content {
@@ -238,4 +239,36 @@ footer a:visited,
 
 .contact-us .section-image {
     background-image: url('../img/contact.jpeg');
+}
+
+.section-wrapper.imgs {
+    margin-top: 30px;
+}
+
+.img-tool {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.img-tool:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.heroku {
+    background-image: url('../img/success.jpg');
+}
+
+.postgre {
+    background-image: url('../img/touch.jpeg');
+}
+
+.ruby {
+    background-image: url('../img/whatwedo.jpg');
 }

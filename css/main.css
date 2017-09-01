@@ -272,3 +272,56 @@ footer a:visited,
 .ruby {
     background-image: url('../img/whatwedo.jpg');
 }
+
+.img-wizard {
+    width: 240px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wizard .lore {
+    width: 100%;
+    min-height: 0;
+    max-height: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: min-height 0.2s ease-in-out,
+                max-height 0.2s ease-in-out;
+}
+
+.img-wizard:hover .lore {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.img-wizard:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.dryboss {
+    background-image: url('../img/dryboss.jpg');
+}
+
+.charly {
+    background-image: url('../img/charly.jpg');
+}
+
+.gabe {
+    background-image: url('../img/gabe.jpg');
+}

@@ -249,7 +249,9 @@ footer a:visited,
     width: 200px;
     height: 200px;
     margin-bottom: 20px;
-    background-size: cover;
+    /* background-color: #fff; */
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -261,16 +263,68 @@ footer a:visited,
     transform: scale(1.1, 1.1);
 }
 
-.heroku {
-    background-image: url('../img/success.jpg');
-}
-
 .postgre {
-    background-image: url('../img/touch.jpeg');
+    background-image: url('../img/postgre.png');
 }
 
 .ruby {
-    background-image: url('../img/whatwedo.jpg');
+    background-image: url('../img/ruby.png');
+}
+
+.github {
+    background-image: url('../img/githubpurple.png');
+}
+
+.git {
+    background-image: url('../img/git.png');
+}
+
+.angular {
+    background-image: url('../img/angular.png');
+}
+
+.react {
+    background-image: url('../img/react.png');
+}
+
+.grunt {
+    background-image: url('../img/grunt.png');
+}
+
+.bower {
+    background-image: url('../img/bower.png');
+}
+
+.javascript {
+    background-image: url('../img/javascript.png');
+}
+
+.node {
+    background-image: url('../img/node.png');
+}
+
+.html5 {
+    background-image: url('../img/html5.png');
+}
+
+.sass {
+    background-image: url('../img/sass.png');
+}
+
+.rails {
+    background-image: url('../img/rails.png');
+}
+
+.heroku {
+    background-image: url('../img/heroku.png');
+}
+
+.webpack {
+    background-image: url('../img/webpack.png');
+}
+
+.babel {
+    background-image: url('../img/babel.png');
 }
 
 .img-wizard {
